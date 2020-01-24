@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eagle GYM</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			
+		</div>
+		<ul id="navigation">
+			<li class="active">
+				<a href="{% url 'sign_up_customer' %}">customer</a>
+			</li>
+			<li>
+				<a href="{% url 'sign_up_subscribtion' %}">subscribtions</a>
+			</li>
+			<li>
+				<a href="{% url 'visit_customer' %}">visit</a>
+			</li>
+			<!-- <li>
+				<a href="#">the journey</a>
+			</li> -->
+		</ul>
+	</div>
+	<div id="adbox">
+		<div>
+			<div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<div id="body">
+		{% block page_content %}
+
+			{% endblock %}
+
+		
+		<div id="main">
+			
+
+
+			
+		</div>
+		<div id="articles">
+			<ul>
+				
+				
+				
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		
+		<div id="footnote">
+			<ul>
+				<li class="active">
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				
+			</ul>
+			
+		</div>
+	</div>
+</body>
+</html>
